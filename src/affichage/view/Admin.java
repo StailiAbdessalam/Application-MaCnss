@@ -20,15 +20,14 @@ public class Admin {
     public static int MenuAdmin(){
        while (true){
            System.out.println("choisi votre choix :");
-           System.out.println("1: add agent. \n2: Géres les Dossiers\n3: log out");
+           System.out.println("1: add agent. \n2: log out");
            Scanner scanChoix = new Scanner(System.in);
            int choix = scanChoix.nextInt();
            switch (choix){
                case 1:
-
+                   addAgent();
+                   continue;
                case 2:
-
-               case 3:
                    System.out.println("1: Yes\n2: Non");
                    Scanner surQuite = new Scanner(System.in);
                    int sur = surQuite.nextInt();
@@ -45,6 +44,27 @@ public class Admin {
                    continue;
            }
        }
+    }
+
+    public static void addAgent()  {
+        System.out.println("Entrer votre nom");
+        Scanner scanNom = new Scanner(System.in);
+        String nom = scanNom.nextLine();
+
+        System.out.println("Entrer votre Prenom");
+        Scanner scanPrenom = new Scanner(System.in);
+        String prenom = scanPrenom.nextLine();
+
+        System.out.println("Entrer votre Email");
+        Scanner scanEmail = new Scanner(System.in);
+        String Email = scanPrenom.nextLine();
+
+        System.out.println("Entrer votre number phone");
+        Scanner scanPhone = new Scanner(System.in);
+        String Phone = scanPrenom.nextLine();
+
+        System.out.println("\033[0;32mvotre agent ajouter par success\033[0m");
+
     }
 
 
