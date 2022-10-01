@@ -1,10 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="95cc0e6c-4ad9-498c-8c93-f43543a841a5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/models/Agent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Agent.java" afterDir="false" />
+=======
+    <list default="true" id="95cc0e6c-4ad9-498c-8c93-f43543a841a5" name="Changes" comment="initail class agent">
+      <change afterPath="$PROJECT_DIR$/src/affichage/global/Globalmethod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/affichage/Presantation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/affichage/Presantation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/person/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/person/Person.java" afterDir="false" />
+>>>>>>> 71def66441bc8381669df5d5aea5c42b30505ad1
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,6 +23,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="package-info" />
         <option value="Class" />
       </list>
     </option>
@@ -52,8 +62,41 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1664526119381</updated>
+      <workItem from="1664526121186" duration="12458000" />
     </task>
+    <task id="LOCAL-00001" summary="link folder in repau github">
+      <created>1664526166770</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1664526166770</updated>
+    </task>
+    <task id="LOCAL-00002" summary="create a method menu Global to choixi role the user">
+      <created>1664645424014</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1664645424014</updated>
+    </task>
+    <task id="LOCAL-00003" summary="class admin and method login and menu admin to choix propriete admin">
+      <created>1664651675227</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1664651675227</updated>
+    </task>
+    <task id="LOCAL-00004" summary="initail class agent">
+      <created>1664651688337</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1664651688337</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -65,5 +108,12 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="link folder in repau github" />
+    <MESSAGE value="create a method menu Global to choixi role the user" />
+    <MESSAGE value="class admin and method login and menu admin to choix propriete admin" />
+    <MESSAGE value="initail class agent" />
+    <option name="LAST_COMMIT_MESSAGE" value="initail class agent" />
   </component>
 </project>

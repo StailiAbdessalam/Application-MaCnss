@@ -1,12 +1,25 @@
+import affichage.Presantation;
 import models.Admin;
-
-import java.sql.*;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args){
+
+    public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
+        Presantation affichage = new Presantation();
+        affichage.Presantation();
+
+
+
+        System.exit(0);
+
+
+
+
+
+
+        System.out.println("hello word");
         System.out.print("Matricule : ");
         String mat = input.nextLine();
         System.out.print("Nom : ");
@@ -18,10 +31,10 @@ public class Main {
         System.out.print("Mot de passe : ");
         String mdp = input.nextLine();
 
-        Admin admin = new Admin(mat,nom,prenom,email,mdp);
+        Admin admin = new Admin(mat, nom, prenom, email, mdp);
         boolean result = admin.addAdmin();
 
-        if (!result){
+        if (!result) {
             System.out.println("Admin was successfully added!");
             System.out.printf("\n\n");
             System.out.println("\t\t Admins");
@@ -29,4 +42,6 @@ public class Main {
         }
         return;
     }
+
+
 }
