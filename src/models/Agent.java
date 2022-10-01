@@ -58,6 +58,18 @@ public class Agent extends Person {
         return status;
     }
 
+    public static void showAgents(){
+        try {
+            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/macnss","root","");
+            Statement statement = connection.createStatement();
+            ResultSet resultSet = statement.executeQuery("SELECT * FROM agent");
+            while (resultSet.next()){
+                System.out.println("    MATRICULE : "+resultSet.getString(1)+" | NOM : "+resultSet.getString(2)+" | PRENOM : "+resultSet.getString(3)+" | EMAIL : "+resultSet.getString(4));
+            }
+        }catch (SQLException e){
+            System.out.println("Something went wrong : "+e);
+        }
+    }
 
 
 
