@@ -25,17 +25,8 @@ public class Main {
             System.out.println("Admin was successfully added!");
             System.out.printf("\n\n");
             System.out.println("\t\t Admins");
-
             Admin.showAdmins();
-            return;
-        }else {
-            return;
         }
-
-
-
-
-
-
+        return;
     }
 }
