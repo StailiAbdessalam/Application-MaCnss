@@ -14,8 +14,7 @@ public abstract class Person {
         this.email = email;
         this.passWord = passWord;
     }
-    
-   
-    protected abstract Boolean authenticate(String email,String password);
+
+
     
 }

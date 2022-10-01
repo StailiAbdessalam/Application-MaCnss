@@ -1,19 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-<<<<<<< HEAD
-    <list default="true" id="95cc0e6c-4ad9-498c-8c93-f43543a841a5" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/Agent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Agent.java" afterDir="false" />
-=======
     <list default="true" id="95cc0e6c-4ad9-498c-8c93-f43543a841a5" name="Changes" comment="initail class agent">
-      <change afterPath="$PROJECT_DIR$/src/affichage/global/Globalmethod.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MainTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/affichage/Presantation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/affichage/Presantation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Admin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/Agent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Agent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Client.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/models/person/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/person/Person.java" afterDir="false" />
->>>>>>> 71def66441bc8381669df5d5aea5c42b30505ad1
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
