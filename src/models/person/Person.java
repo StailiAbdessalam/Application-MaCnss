@@ -1,7 +1,6 @@
 package models.person;
 
 public abstract class Person {
-	
 	protected String matricule;
 	protected String firstName;
 	protected String lastName;
