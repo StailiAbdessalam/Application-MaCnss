@@ -6,6 +6,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
+        System.out.println("hello word");
         System.out.print("Matricule : ");
         String mat = input.nextLine();
         System.out.print("Nom : ");
