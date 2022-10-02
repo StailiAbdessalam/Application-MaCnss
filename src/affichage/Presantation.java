@@ -1,12 +1,13 @@
 package affichage;
 import affichage.view.Admin;
+import affichage.view.Agent;
 
 import java.util.Scanner;
 
 public class Presantation {
 
     public void Presantation(){
-        System.out.println("bonjour dans MCNSS :");
+      System.out.println("bonjour dans MCNSS :");
       while (true){
           int choixGlobal = this.MenuGlobal();
           switch (choixGlobal){
@@ -19,10 +20,20 @@ public class Presantation {
                       if(choix==0){
                           continue;
                       }
-
                   }
-              case 2 :
 
+
+
+              case 2 :
+                  int agent = Agent.login();
+                  if(agent==0){
+                      continue;
+                  }else {
+                      int choix = Agent.MenuAgent();
+                      if(choix==0){
+                          continue;
+                      }
+                  }
               case 3 :
 
               case 4 :

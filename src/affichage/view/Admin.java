@@ -2,13 +2,14 @@ package affichage.view;
 
 import affichage.global.Globalmethod;
 
+import java.util.HashMap;
 import java.util.Scanner;
 
 public class Admin {
 
     public static int login() {
-        Boolean checklogin = Globalmethod.login();
-        if(checklogin){
+        HashMap checklogin = Globalmethod.login("Email");
+        if(checklogin!=null){
             return 1;
         }else {
             System.out.println("\033[0;31mvotre donnée et invalid\033[0m");
