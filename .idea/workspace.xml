@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="95cc0e6c-4ad9-498c-8c93-f43543a841a5" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/models/dossier/Composants/Scanner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/dossier/Composants/Scanner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/dossier/Composants/Medicament.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/dossier/Composants/Medicament.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/dossier/Composants/Ordonnance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/dossier/Composants/Ordonnance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/dossier/Dossier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/dossier/Dossier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/person/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/person/Person.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +25,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/MainTest.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -146,5 +155,15 @@
     <MESSAGE value="clas Presantation to affiche menu de view" />
     <MESSAGE value="." />
     <option name="LAST_COMMIT_MESSAGE" value="." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.sql.SQLException" package="java.sql" />
+          <option name="timeStamp" value="3" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

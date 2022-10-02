@@ -25,8 +25,7 @@ public class Ordonnance {
             connection.setAutoCommit(false);
             ps.setString(1,this.code);
             ps.setString(2,this.medecinType);
-            ps.setString(2,this.codeDossier);
-
+            ps.setString(3,this.codeDossier);
             status = ps.execute();
             connection.commit();
             ps.close();

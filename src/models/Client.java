@@ -9,6 +9,8 @@ public class Client extends Person {
         super(matricule, firstName, lastName, email, passWord);
     }
 
+
+
     public static Boolean authenticate(String matricule, String password) {
         try{
             Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/macnss","root","");

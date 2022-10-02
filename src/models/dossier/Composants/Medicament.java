@@ -24,7 +24,6 @@ public class Medicament {
             connection.setAutoCommit(false);
             ps.setString(1,this.code);
             ps.setString(2,this.codeDossier);
-
             status = ps.execute();
             connection.commit();
             ps.close();
