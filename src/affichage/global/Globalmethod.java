@@ -1,16 +1,28 @@
 package affichage.global;
 
+import java.util.HashMap;
 import java.util.Scanner;
 
 public class Globalmethod {
-    public static Boolean login(){
-        System.out.println("entrer votre Email :");
+    public static HashMap login(String cle){
+        HashMap<String,String> infoLogin = new HashMap<>();
+        System.out.println("entrer votre "+cle+" :");
         Scanner scanEmail = new Scanner(System.in);
-        String Email = scanEmail.nextLine();
+        infoLogin.put("Emain",scanEmail.nextLine());
         System.out.println("entrer votre Password :");
         Scanner scanPassword = new Scanner(System.in);
-        String Password = scanPassword.nextLine();
-
-        return true;
+        infoLogin.put("Password",scanPassword.nextLine());
+        // called a method in controller to check if email and password is correct
+        if(true){
+            return infoLogin;
+        }else {
+            return null;
+        }
     }
+
+    public static String sendEmail(Object email){
+
+        return "123";
+    }
+
 }
