@@ -11,46 +11,33 @@ public class Admin extends Person {
 		super(matricule, firstName, lastName, email, passWord);
 	}
 
-	@Override
-	public Boolean authenticate(String email, String password) {
-		return true;
-	}
-
-	public Boolean addAdmin(){
-		boolean status = true;
-		try {
+	public static Boolean authenticate(String email, String password) {
+		try{
 			Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/macnss","root","");
-			String sql = "INSERT INTO admin (matricule,nom,prenom,email,password) VALUES (?,?,?,?,?)";
+			String sql = "select email,password from admin where email = ?";
 			PreparedStatement ps = connection.prepareStatement(sql);
 			connection.setAutoCommit(false);
-			ps.setString(1,this.matricule);
-			ps.setString(2,this.lastName);
-			ps.setString(3,this.firstName);
-			ps.setString(4,this.email);
-			ps.setString(5,this.passWord);
+			ps.setString(1,email);
+			ResultSet rs = ps.executeQuery();
 
-			status = ps.execute();
-			connection.commit();
-			ps.close();
-			connection.close();
+			if (rs.next() == false) {
+				return null;
+			} else {
+				String pw = rs.getString(2);
+				if (pw.equals(password))
+					return true;
+				else
+					return false;
+			}
 
 		}catch (SQLException e){
 			e.printStackTrace();
 		}
-		return status;
+		return null;
 	}
 
-	public static void showAdmins(){
-		try {
-			Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/macnss","root","");
-			Statement statement = connection.createStatement();
-			ResultSet resultSet = statement.executeQuery("SELECT * FROM admin");
-			while (resultSet.next()){
-				System.out.println("    MATRICULE : "+resultSet.getString(1)+" | NOM : "+resultSet.getString(2)+" | PRENOM : "+resultSet.getString(3)+" | EMAIL : "+resultSet.getString(4)+" | PASSWORD : "+resultSet.getString(5));
-			}
-		}catch (SQLException e){
-			System.out.println("Something went wrong : "+e);
-		}
-	}
+
+
+
 
 }
