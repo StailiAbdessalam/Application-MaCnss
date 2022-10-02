@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="95cc0e6c-4ad9-498c-8c93-f43543a841a5" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/models/dossier/Composants/Ordonnance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/dossier/Composants/Ordonnance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/dossier/Composants/Scanner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/dossier/Composants/Scanner.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
