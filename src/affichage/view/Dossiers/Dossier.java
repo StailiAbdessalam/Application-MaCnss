@@ -8,7 +8,7 @@ public class Dossier {
     ArrayList<String> Medicament = new ArrayList<>();
     ArrayList<String> Scanner = new ArrayList<>();
 
-    public void addDossier(){
+    public int addDossier(){
       while(true){
           System.out.println("taper valide pour valider les donners de client .");
           String message = "1: Add Ordinances || "+this.ordonances.size();
@@ -17,10 +17,21 @@ public class Dossier {
           } else {
               System.out.println("\033[0;34m"+message+"\033[0m");
           }
+          message = "2: Add Medicament || "+this.Medicament.size();
+          if (Medicament.size() == 0) {
+              System.out.println(message);
+          } else {
+              System.out.println("\033[0;34m"+message+"\033[0m");
+          }
 
-          System.out.println("2: Add Medicament || "+this.Medicament.size() );
-          System.out.println("3: Add Ordinances || "+this.Scanner.size() );
-          System.out.println("4: valider Dossier " );
+          message = "3: Add Scanner || "+this.Scanner.size() ;
+          if (Scanner.size() == 0) {
+              System.out.println(message);
+          } else {
+              System.out.println("\033[0;34m"+message+"\033[0m");
+          }
+          System.out.println("4: valider Dossier");
+          System.out.println("5: Exit");
           Scanner choix = new Scanner(System.in);
           int choiDossier = choix.nextInt();
           switch (choiDossier){
@@ -39,11 +50,13 @@ public class Dossier {
                   Scanner scanScanner = new Scanner(System.in);
                   Scanner.add(scanScanner.nextLine());
                   continue;
-
               case 4:
-                  System.out.println("valide ");
+                  // called methodController to add dossier in a database
+                  return 1;
               case 5:
-
+                  return 0;
+              default:
+                  System.out.println("\033[0;31mvotre choix invalid\033[0m");
           }
       }
     }
