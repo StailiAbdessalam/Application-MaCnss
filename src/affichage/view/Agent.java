@@ -1,5 +1,7 @@
 package affichage.view;
 import affichage.global.Globalmethod;
+import affichage.view.Dossiers.Dossier;
+
 import java.util.HashMap;
 import java.util.Objects;
 import java.util.Scanner;
@@ -26,7 +28,6 @@ public class Agent {
                 return 0;
             }
     }
-
     public static Boolean checkCle(String cleEmail){
         System.out.println("nous somme envoyer le cle d'entrer dans votre email || entrer votre cle d'entrer || or taper exit pour sortie :");
         Scanner scanCle = new Scanner(System.in);
@@ -39,6 +40,7 @@ public class Agent {
             return false;
         }
     }
+
     public static int MenuAgent(){
         while (true){
             System.out.println("choisi votre choix :");
@@ -47,6 +49,9 @@ public class Agent {
             int choix = scanChoix.nextInt();
             switch (choix){
                 case 1:
+                    Dossier dossier = new Dossier();
+                    dossier.addDossier();
+
                     continue;
                 case 2:
 
@@ -68,6 +73,26 @@ public class Agent {
             }
         }
 
+    }
+
+    public static void addAgent()  {
+        System.out.println("Entrer votre nom");
+        Scanner scanNom = new Scanner(System.in);
+        String nom = scanNom.nextLine();
+
+        System.out.println("Entrer votre Prenom");
+        Scanner scanPrenom = new Scanner(System.in);
+        String prenom = scanPrenom.nextLine();
+
+        System.out.println("Entrer votre Email");
+        Scanner scanEmail = new Scanner(System.in);
+        String Email = scanPrenom.nextLine();
+
+        System.out.println("Entrer votre number phone");
+        Scanner scanPhone = new Scanner(System.in);
+        String Phone = scanPrenom.nextLine();
+
+        System.out.println("\033[0;32mvotre agent ajouter par success\033[0m");
     }
 
 }
