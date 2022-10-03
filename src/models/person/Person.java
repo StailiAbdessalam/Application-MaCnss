@@ -1,5 +1,7 @@
 package models.person;
 
+import java.sql.*;
+
 public abstract class Person {
 	protected String matricule;
 	protected String firstName;
@@ -14,6 +16,8 @@ public abstract class Person {
         this.email = email;
         this.passWord = passWord;
     }
+
+    public Person() {}
 
     public String getMatricule() {
         return matricule;
@@ -53,5 +57,32 @@ public abstract class Person {
 
     public void setPassWord(String passWord) {
         this.passWord = passWord;
+    }
+
+    /*
+     * getPassword take email and return password if email doesn't exist return null
+     * Parameter : String Email
+     * Return String (PassWord)
+     */
+    public String getPassword(String loginId,String table,String loginCle){
+        try{
+            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/macnss","root","");
+            String sql = "select "+loginCle+",password from "+table+" where email = ?";
+            PreparedStatement ps = connection.prepareStatement(sql);
+            connection.setAutoCommit(false);
+            ps.setString(1,loginId);
+            ResultSet rs = ps.executeQuery();
+
+            if (rs.next() == false) {
+                return null;
+            } else {
+                String pw = rs.getString(2);
+                return pw;
+            }
+
+        }catch (SQLException e){
+            e.printStackTrace();
+        }
+        return null;
     }
 }

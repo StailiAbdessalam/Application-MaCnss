@@ -27,7 +27,6 @@ public class MainTest {
 
 
 
-
         //System.out.println(Agent.authenticate("agent1@gmail.com","agent11"));
         //Agent a = new Agent("00000000","agent1","agent1","agent1@gmail.com","agent11");
         //boolean res = a.addAgent();
