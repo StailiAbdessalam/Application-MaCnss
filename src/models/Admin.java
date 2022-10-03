@@ -11,6 +11,6 @@ public class Admin extends Person {
 		super(matricule, firstName, lastName, email, passWord);
 	}
 
-
+	public Admin() {};
 
 }

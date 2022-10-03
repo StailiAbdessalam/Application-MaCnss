@@ -9,4 +9,5 @@ public class Client extends Person {
         super(matricule, firstName, lastName, email, passWord);
     }
 
+    public Client() {};
 }
