@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="95cc0e6c-4ad9-498c-8c93-f43543a841a5" name="Changes" comment="add a method login">
+    <list default="true" id="95cc0e6c-4ad9-498c-8c93-f43543a841a5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/affichage/view/Dossiers/Dossier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/affichage/view/Patient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/affichage/Presantation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/affichage/Presantation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/affichage/global/Globalmethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/affichage/global/Globalmethod.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/affichage/view/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/affichage/view/Admin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/affichage/view/Agent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/affichage/view/Agent.java" afterDir="false" />
     </list>
