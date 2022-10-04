@@ -110,6 +110,7 @@ public class Agent {
         agentInfo.put("email",email);
 
         return agentInfo;
+<<<<<<< HEAD
     }
 
     public static void sendEmail() {
@@ -137,6 +138,8 @@ public class Agent {
             e.printStackTrace();
         }
 
+=======
+>>>>>>> da5779689a8e0e811b3d03ea7956aa7b9a344eaa
     }
 
 }
