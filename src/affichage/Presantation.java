@@ -21,9 +21,6 @@ public class Presantation {
                           continue;
                       }
                   }
-
-
-
               case 2 :
                   int agent = Agent.login();
                   if(agent==0){

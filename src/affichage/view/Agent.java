@@ -51,7 +51,6 @@ public class Agent {
                 case 1:
                     Dossier dossier = new Dossier();
                     dossier.addDossier();
-
                     continue;
                 case 2:
 
