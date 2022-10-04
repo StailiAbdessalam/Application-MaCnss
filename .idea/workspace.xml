@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="16db03c6-bcee-4ac1-a8df-9316454e6470" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/affichage/global/Globalmethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/affichage/global/Globalmethod.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/affichage/view/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/affichage/view/Admin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/affichage/view/Agent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/affichage/view/Agent.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +25,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/MainTest.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/affichage/view/Admin.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/affichage/view/Agent.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />

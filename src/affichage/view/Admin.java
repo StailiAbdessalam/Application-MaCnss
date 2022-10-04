@@ -10,8 +10,8 @@ public class Admin {
     public static int login() {
         HashMap loginInputs = Globalmethod.login("Email");
         AdminController admin = new AdminController();
-        Boolean adminValid = admin.authenticate((String) loginInputs.get("email"), (String) loginInputs.get("password"));
-        if(adminValid != null && adminValid){
+        Boolean adminValidation = admin.authenticate((String) loginInputs.get("email"), (String) loginInputs.get("password"));
+        if(adminValidation != null && adminValidation){
             return 1;
         }else {
             System.out.println("\033[0;31mvotre donnée et invalid\033[0m");
