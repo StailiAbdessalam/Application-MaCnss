@@ -1,5 +1,7 @@
 package models.person;
 
+import app.Cnx;
+
 import java.sql.*;
 
 public abstract class Person {
@@ -8,6 +10,8 @@ public abstract class Person {
 	protected String lastName;
 	protected String email;
 	protected String passWord;
+
+    protected Connection connection =Cnx.CNX() ;
 
     public Person(String matricule, String firstName, String lastName, String email, String passWord) {
         this.matricule = matricule;
@@ -66,7 +70,7 @@ public abstract class Person {
      */
     public String getPassword(String loginId,String table,String loginCle){
         try{
-            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/macnss","root","");
+
             String sql = "select "+loginCle+",password from "+table+" where email = ?";
             PreparedStatement ps = connection.prepareStatement(sql);
             connection.setAutoCommit(false);
