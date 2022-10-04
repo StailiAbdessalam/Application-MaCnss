@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="16db03c6-bcee-4ac1-a8df-9316454e6470" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/System/System.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/System/System.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/affichage/Presantation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/affichage/Presantation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/affichage/global/Globalmethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/affichage/global/Globalmethod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/affichage/view/Agent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/affichage/view/Agent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/affichage/view/Dossiers/Dossier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/affichage/view/Dossiers/Dossier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/person/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/person/AdminController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +58,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="16db03c6-bcee-4ac1-a8df-9316454e6470" name="Changes" comment="" />
+      <changelist id="95cc0e6c-4ad9-498c-8c93-f43543a841a5" name="Changes" comment="" />
       <created>1664526119381</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />

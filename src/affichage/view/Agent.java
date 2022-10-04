@@ -40,7 +40,6 @@ public class Agent {
             return false;
         }
     }
-
     public static int MenuAgent(){
         while (true){
             System.out.println("choisi votre choix :");
@@ -50,9 +49,13 @@ public class Agent {
             switch (choix){
                 case 1:
                     Dossier dossier = new Dossier();
-                    dossier.addDossier();
-
-                    continue;
+                    int dossieradded = dossier.addDossier();
+                    if(dossieradded==0){
+                        continue;
+                    }else {
+                        System.out.println("file added");
+                        continue;
+                    }
                 case 2:
 
                 case 3:
