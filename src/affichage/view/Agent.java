@@ -88,17 +88,16 @@ public class Agent {
     public static HashMap  addAgent()  {
         HashMap<String,String> agentInfo = new HashMap<>();
         Scanner scanner = new Scanner(System.in);
+        agentInfo.put("matricule",Globalmethod.genereteMatricule());
         System.out.println("Entrer le nom");
         String nom = scanner.nextLine();
-
+        agentInfo.put("nom",nom);
         System.out.println("Entrer le Prenom");
         String prenom = scanner.nextLine();
-
+        agentInfo.put("prenom",prenom);
         System.out.println("Entrer le Email");
-        String Email = scanner.nextLine();
-
-
-        System.out.println("\033[0;32Agent  ajouté avec succès\033[0m");
+        String email = scanner.nextLine();
+        agentInfo.put("email",email);
 
         return agentInfo;
     }

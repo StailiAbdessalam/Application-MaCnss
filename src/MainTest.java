@@ -26,11 +26,9 @@ public class MainTest {
 
         //d.createDossier(arrayOrdonnance,arrayMedicament,arrayScanner);
 
-
-        //System.out.println(Agent.authenticate("agent1@gmail.com","agent11"));
-        //Agent a = new Agent("00000000","agent1","agent1","agent1@gmail.com","agent11");
+        //Agent a = new Agent(Globalmethod.genereteMatricule(),"agent1","agent1","agent1@gmail.com","agent11");
         //boolean res = a.addAgent();
-        //if (!res){
+        //if (res){
         //    System.out.println("created successfully!");
         //}else {
         //    System.out.println("nope!");

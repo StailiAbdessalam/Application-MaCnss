@@ -1,7 +1,9 @@
 package controllers.person;
 
+import affichage.view.Agent;
 import models.Admin;
-import models.Agent;
+
+import java.util.HashMap;
 
 public class AdminController {
     public Boolean authenticate(String email, String password) {
@@ -18,7 +20,14 @@ public class AdminController {
     }
 
     public Boolean addAgent(){
-
-        return null;
+        HashMap agentInfo = Agent.addAgent();
+        String matricule = agentInfo.get("matricule").toString();
+        String nom = agentInfo.get("nom").toString();
+        String prenom = agentInfo.get("prenom").toString();
+        String email = agentInfo.get("email").toString();
+        String password = "123456";
+        models.Agent agent = new models.Agent(matricule,prenom,nom,email,password);
+        Boolean result = agent.addAgent();
+        return result;
     }
 }

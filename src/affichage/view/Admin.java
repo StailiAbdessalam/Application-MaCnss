@@ -26,7 +26,13 @@ public class Admin {
            int choix = scanChoix.nextInt();
            switch (choix){
                case 1:
-                   Agent.addAgent();
+                   AdminController adminController = new AdminController();
+                   Boolean ajout = adminController.addAgent();
+                   if (!ajout){
+                       System.out.println("Agent ajouté avec succès");
+                   }else {
+                       System.out.println("\033[0;quelque chose s'est mal passé\033[0;");
+                   }
                    continue;
                case 2:
                    System.out.println("1: Yes\n2: Non");
