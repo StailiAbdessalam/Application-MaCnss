@@ -6,6 +6,16 @@ import java.util.HashMap;
 import java.util.Objects;
 import java.util.Scanner;
 
+
+import services.Courier;
+import services.SendService;
+import models.SendEnhancedRequestBody;
+import models.SendEnhancedResponseBody;
+import models.SendRequestMessage;
+import com.google.gson.Gson;
+import java.io.IOException;
+import java.util.HashMap;
+
 public class Agent {
     public static int login() {
         HashMap checklogin = Globalmethod.login("Email");
@@ -96,6 +106,33 @@ public class Agent {
         String Phone = scanPrenom.nextLine();
 
         System.out.println("\033[0;32mvotre agent ajouter par success\033[0m");
+    }
+
+    public static void sendEmail() {
+        Courier.init("pk_test_XPKJ13ZCZQ4CDWJ6J18XYT3FYKAF");
+
+        SendEnhancedRequestBody sendEnhancedRequestBody = new SendEnhancedRequestBody();
+        SendRequestMessage sendRequestMessage = new SendRequestMessage();
+        HashMap<String, String> to = new HashMap<String, String>();
+        to.put("email", "the.staili.abdessalam@gmail.com");
+        sendRequestMessage.setTo(to);
+
+        HashMap<String, String> content = new HashMap<String, String>();
+        content.put("title", "Simplon Clone : Nouveau Brief");
+        content.put("body", "Hello test email");
+        sendRequestMessage.setContent(content);
+
+        HashMap<String, Object> data = new HashMap<String, Object>();
+        sendRequestMessage.setData(data);
+        sendEnhancedRequestBody.setMessage(sendRequestMessage);
+
+        try {
+            SendEnhancedResponseBody response = new SendService().sendEnhancedMessage(sendEnhancedRequestBody);
+            System.out.println(response);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
     }
 
 }
