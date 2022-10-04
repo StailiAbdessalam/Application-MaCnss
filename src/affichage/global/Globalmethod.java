@@ -1,10 +1,7 @@
 package affichage.global;
-
 import controllers.person.AdminController;
-
 import java.util.HashMap;
 import java.util.Scanner;
-
 public class Globalmethod {
     public static HashMap login(String cle){
         HashMap<String,String> infoLogin = new HashMap<>();

@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="95cc0e6c-4ad9-498c-8c93-f43543a841a5" name="Changes" comment="initial the class Patient">
+    <list default="true" id="95cc0e6c-4ad9-498c-8c93-f43543a841a5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/affichage/Presantation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/affichage/Presantation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/affichage/global/Globalmethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/affichage/global/Globalmethod.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/affichage/view/Agent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/affichage/view/Agent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/person/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/person/AdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/affichage/view/Dossiers/Dossier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/affichage/view/Dossiers/Dossier.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +58,6 @@
       <option name="presentableId" value="Default" />
       <updated>1664526119381</updated>
       <workItem from="1664526121186" duration="12458000" />
-      <workItem from="1664871186471" duration="2129000" />
     </task>
     <task id="LOCAL-00001" summary="link folder in repau github">
       <created>1664526166770</created>
