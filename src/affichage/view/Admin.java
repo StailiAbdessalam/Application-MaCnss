@@ -1,14 +1,17 @@
 package affichage.view;
 
 import affichage.global.Globalmethod;
+import controllers.person.AdminController;
 
 import java.util.HashMap;
 import java.util.Scanner;
 
 public class Admin {
     public static int login() {
-        HashMap checklogin = Globalmethod.login("Email");
-        if(checklogin!=null){
+        HashMap loginInputs = Globalmethod.login("Email");
+        AdminController admin = new AdminController();
+        Boolean adminValidation = admin.authenticate((String) loginInputs.get("loginKey"), (String) loginInputs.get("password"));
+        if(adminValidation != null && adminValidation){
             return 1;
         }else {
             System.out.println("\033[0;31mvotre donnée et invalid\033[0m");
@@ -23,7 +26,13 @@ public class Admin {
            int choix = scanChoix.nextInt();
            switch (choix){
                case 1:
-                   Agent.addAgent();
+                   AdminController adminController = new AdminController();
+                   Boolean ajout = adminController.addAgent();
+                   if (!ajout){
+                       System.out.println("Agent ajouté avec succès");
+                   }else {
+                       System.out.println("\033[0;quelque chose s'est mal passé\033[0;");
+                   }
                    continue;
                case 2:
                    System.out.println("1: Yes\n2: Non");

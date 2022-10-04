@@ -4,15 +4,15 @@ import java.sql.*;
 
 public class Agent extends Person {
 
-    public Agent(String matricule, String firstName, String lastName, String email, String passWord) {
-        super(matricule, firstName, lastName, email, passWord);
+    public Agent(String matricule, String firstName, String lastName, String email, String password) {
+        super(matricule, firstName, lastName, email, password);
     }
 
     public Agent() {};
 
 
 
-    public Boolean addAgent(){
+    public boolean addAgent(){
         boolean status = true;
         try {
             Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/macnss","root","");

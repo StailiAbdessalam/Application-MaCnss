@@ -1,5 +1,6 @@
-import affichage.view.Agent;
+import affichage.global.Globalmethod;
 import models.Admin;
+import models.Agent;
 import models.Client;
 import models.dossier.Composants.Medicament;
 import models.dossier.Composants.Ordonnance;
@@ -25,12 +26,9 @@ public class MainTest {
 
         //d.createDossier(arrayOrdonnance,arrayMedicament,arrayScanner);
 
-        //String pw = client.getPassword("younesbuzz@gmail.com","client","matricule");
-        //System.out.println(pw);
-        //System.out.println(Agent.authenticate("agent1@gmail.com","agent11"));
-        //Agent a = new Agent("00000000","agent1","agent1","agent1@gmail.com","agent11");
+        //Agent a = new Agent(Globalmethod.genereteMatricule(),"agent1","agent1","agent1@gmail.com","agent11");
         //boolean res = a.addAgent();
-        //if (!res){
+        //if (res){
         //    System.out.println("created successfully!");
         //}else {
         //    System.out.println("nope!");
