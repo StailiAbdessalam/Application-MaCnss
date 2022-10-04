@@ -10,7 +10,7 @@ public class Admin {
     public static int login() {
         HashMap loginInputs = Globalmethod.login("Email");
         AdminController admin = new AdminController();
-        Boolean adminValidation = admin.authenticate((String) loginInputs.get("email"), (String) loginInputs.get("password"));
+        Boolean adminValidation = admin.authenticate((String) loginInputs.get("loginKey"), (String) loginInputs.get("password"));
         if(adminValidation != null && adminValidation){
             return 1;
         }else {

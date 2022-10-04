@@ -15,7 +15,7 @@ public class Agent {
 
 
         AgentController agent = new AgentController();
-        Boolean agentValidation = agent.authenticate((String) loginInputs.get("email"), (String) loginInputs.get("password"));
+        Boolean agentValidation = agent.authenticate((String) loginInputs.get("loginKey"), (String) loginInputs.get("password"));
         if(agentValidation != null && agentValidation){
             System.out.println("votre information et correct");
             String Cle = Globalmethod.sendEmail(loginInputs.get("Email"));

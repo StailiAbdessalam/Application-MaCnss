@@ -7,11 +7,11 @@ public class Globalmethod {
         HashMap<String,String> infoLogin = new HashMap<>();
         System.out.println("entrer votre "+cle+" :");
         Scanner scanEmail = new Scanner(System.in);
-        infoLogin.put("email",scanEmail.nextLine());
+        infoLogin.put("loginKey",scanEmail.nextLine());
         System.out.println("entrer votre Password :");
         Scanner scanPassword = new Scanner(System.in);
         infoLogin.put("password",scanPassword.nextLine());
-        if(!infoLogin.get("email").isEmpty() && !infoLogin.get("password").isEmpty()){
+        if(!infoLogin.get("loginKey").isEmpty() && !infoLogin.get("password").isEmpty()){
             return infoLogin;
         }else {
             return null;
