@@ -1,14 +1,17 @@
 package affichage.view;
 
 import affichage.global.Globalmethod;
+import controllers.person.AdminController;
 
 import java.util.HashMap;
 import java.util.Scanner;
 
 public class Admin {
     public static int login() {
-        HashMap checklogin = Globalmethod.login("Email");
-        if(checklogin!=null){
+        HashMap loginInputs = Globalmethod.login("Email");
+        AdminController admin = new AdminController();
+        Boolean adminValid = admin.authenticate((String) loginInputs.get("email"), (String) loginInputs.get("password"));
+        if(adminValid != null && adminValid){
             return 1;
         }else {
             System.out.println("\033[0;31mvotre donnée et invalid\033[0m");

@@ -7,13 +7,11 @@ public class Globalmethod {
         HashMap<String,String> infoLogin = new HashMap<>();
         System.out.println("entrer votre "+cle+" :");
         Scanner scanEmail = new Scanner(System.in);
-        infoLogin.put("Email",scanEmail.nextLine());
+        infoLogin.put("email",scanEmail.nextLine());
         System.out.println("entrer votre Password :");
         Scanner scanPassword = new Scanner(System.in);
-        infoLogin.put("Password",scanPassword.nextLine());
-        AdminController admin = new AdminController();
-        Boolean adminValid = admin.authenticate(infoLogin.get("Email"),infoLogin.get("Password"));
-        if(adminValid !=null && adminValid){
+        infoLogin.put("password",scanPassword.nextLine());
+        if(!infoLogin.get("email").isEmpty() && !infoLogin.get("password").isEmpty()){
             return infoLogin;
         }else {
             return null;

@@ -1,5 +1,4 @@
 import affichage.Presantation;
-import models.Admin;
 import java.util.Scanner;
 
 public class Main {
@@ -9,9 +8,6 @@ public class Main {
 
         Presantation affichage = new Presantation();
         affichage.Presantation();
-
-
-
         System.exit(0);
 
     }
