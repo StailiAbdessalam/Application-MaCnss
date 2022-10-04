@@ -67,7 +67,7 @@ public abstract class Person {
     public String getPassword(String loginId,String table,String loginCle){
         try{
             Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/macnss","root","");
-            String sql = "select "+loginCle+",password from "+table+" where email = ?";
+            String sql = "select "+loginCle+",password from "+table+" where "+loginCle+" = ?";
             PreparedStatement ps = connection.prepareStatement(sql);
             connection.setAutoCommit(false);
             ps.setString(1,loginId);

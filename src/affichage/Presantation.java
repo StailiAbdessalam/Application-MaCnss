@@ -1,6 +1,7 @@
 package affichage;
 import affichage.view.Admin;
 import affichage.view.Agent;
+import affichage.view.Client;
 
 import java.util.Scanner;
 
@@ -32,6 +33,15 @@ public class Presantation {
                       }
                   }
               case 3 :
+                  int client = Client.login();
+                  if(client==0){
+                      continue;
+                  }else {
+                      int choix = Client.MenuClient();
+                      if(choix==0){
+                          continue;
+                      }
+                  }
 
               case 4 :
                   System.exit(0);
@@ -44,7 +54,7 @@ public class Presantation {
     }
     public int MenuGlobal(){
             System.out.println("choixi Votre Role");
-            System.out.println("1: Admin \n2: Agent\n3: Patient\n4: Exit");
+            System.out.println("1: Admin \n2: Agent\n3: Client\n4: Exit");
             Scanner scanMenuGlobal = new Scanner(System.in);
             int choixMenuGlobal = scanMenuGlobal.nextInt();
             return choixMenuGlobal;
