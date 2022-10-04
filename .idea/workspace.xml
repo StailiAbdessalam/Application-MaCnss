@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="16db03c6-bcee-4ac1-a8df-9316454e6470" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/affichage/Presantation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/affichage/Presantation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/affichage/view/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/affichage/view/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/person/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/person/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/affichage/global/Globalmethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/affichage/global/Globalmethod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/affichage/view/Agent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/affichage/view/Agent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/person/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/person/AdminController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +27,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/MainTest.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/affichage/global/Globalmethod.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/affichage/view/Admin.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/affichage/view/Agent.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/affichage/view/Client.java" root0="SKIP_INSPECTION" />

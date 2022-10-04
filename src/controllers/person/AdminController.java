@@ -1,6 +1,7 @@
 package controllers.person;
 
 import models.Admin;
+import models.Agent;
 
 public class AdminController {
     public Boolean authenticate(String email, String password) {
@@ -14,5 +15,10 @@ public class AdminController {
             else
                 return false;
         }
+    }
+
+    public Boolean addAgent(){
+
+        return null;
     }
 }

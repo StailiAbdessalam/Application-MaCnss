@@ -85,24 +85,22 @@ public class Agent {
 
     }
 
-    public static void addAgent()  {
-        System.out.println("Entrer votre nom");
-        Scanner scanNom = new Scanner(System.in);
-        String nom = scanNom.nextLine();
+    public static HashMap  addAgent()  {
+        HashMap<String,String> agentInfo = new HashMap<>();
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Entrer le nom");
+        String nom = scanner.nextLine();
 
-        System.out.println("Entrer votre Prenom");
-        Scanner scanPrenom = new Scanner(System.in);
-        String prenom = scanPrenom.nextLine();
+        System.out.println("Entrer le Prenom");
+        String prenom = scanner.nextLine();
 
-        System.out.println("Entrer votre Email");
-        Scanner scanEmail = new Scanner(System.in);
-        String Email = scanPrenom.nextLine();
+        System.out.println("Entrer le Email");
+        String Email = scanner.nextLine();
 
-        System.out.println("Entrer votre number phone");
-        Scanner scanPhone = new Scanner(System.in);
-        String Phone = scanPrenom.nextLine();
 
-        System.out.println("\033[0;32mvotre agent ajouter par success\033[0m");
+        System.out.println("\033[0;32Agent  ajouté avec succès\033[0m");
+
+        return agentInfo;
     }
 
 }

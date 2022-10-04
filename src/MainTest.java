@@ -1,3 +1,4 @@
+import affichage.global.Globalmethod;
 import models.Admin;
 import models.Agent;
 import models.Client;
@@ -14,7 +15,7 @@ public class MainTest {
         //ArrayList<Medicament> arrayMedicament = new ArrayList<>();
         //ArrayList<Scanner> arrayScanner = new ArrayList<>();
         //Scanner input = new Scanner(System.in);
-        Client client = new Client("HH29512","client1","client1","client1@gmail.com","client1");
+        //Client client = new Client("HH29512","client1","client1","client1@gmail.com","client1");
         //Dossier d = new Dossier("D31111","En attente","En attente",client.getMatricule());
         //Ordonnance o1 = new Ordonnance("O111111","L3dam",d.getCode());
         //arrayOrdonnance.add(o1);
@@ -25,8 +26,7 @@ public class MainTest {
 
         //d.createDossier(arrayOrdonnance,arrayMedicament,arrayScanner);
 
-        String pw = client.getPassword("younesbuzz@gmail.com","client","matricule");
-        System.out.println(pw);
+
         //System.out.println(Agent.authenticate("agent1@gmail.com","agent11"));
         //Agent a = new Agent("00000000","agent1","agent1","agent1@gmail.com","agent11");
         //boolean res = a.addAgent();
