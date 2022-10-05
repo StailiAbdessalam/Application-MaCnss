@@ -1,6 +1,7 @@
 package affichage.view;
 import affichage.global.Globalmethod;
 import affichage.view.Dossiers.Dossier;
+import app.validation.EmailValidator;
 import controllers.person.AdminController;
 import controllers.person.AgentController;
 
@@ -104,7 +105,14 @@ public class Agent {
         agentInfo.put("prenom",prenom);
         System.out.println("Entrer le Email");
         String email = scanner.nextLine();
-        agentInfo.put("email",email);
+
+        do {
+            email = scanner.nextLine();
+            agentInfo.put("email",email);
+            if (!EmailValidator.isValid(email)){
+                System.out.println("tape a valide email");
+            }
+        }while (!EmailValidator.isValid(email));
 
         return agentInfo;
 
