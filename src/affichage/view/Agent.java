@@ -4,6 +4,7 @@ import affichage.view.Dossiers.Dossier;
 import controllers.person.AdminController;
 import controllers.person.AgentController;
 
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Objects;
 import java.util.Scanner;
@@ -21,14 +22,11 @@ import java.util.HashMap;
 public class Agent {
     public static int login() {
         HashMap loginInputs = Globalmethod.login("Email");
-
-
-
         AgentController agent = new AgentController();
         Boolean agentValidation = agent.authenticate((String) loginInputs.get("loginKey"), (String) loginInputs.get("password"));
         if(agentValidation != null && agentValidation){
             System.out.println("votre information et correct");
-            String Cle = Globalmethod.sendEmail(loginInputs.get("Email"));
+            String Cle = Globalmethod.sendEmail(String.valueOf(loginInputs.get("loginKey")));
             while (true){
                 Boolean checkCle = checkCle(Cle);
                 if(Boolean.TRUE.equals(checkCle)){
@@ -46,7 +44,6 @@ public class Agent {
         }
     }
     public static Boolean checkCle(String cleEmail){
-        System.out.println("nous somme envoyer le cle d'entrer dans votre email || entrer votre cle d'entrer || or taper exit pour sortie :");
         Scanner scanCle = new Scanner(System.in);
         String Cle = scanCle.nextLine();
         if(Objects.equals(Cle, cleEmail)){

@@ -14,7 +14,7 @@ public class MainTest {
         //ArrayList<Ordonnance> arrayOrdonnance = new ArrayList<>();
         //ArrayList<Medicament> arrayMedicament = new ArrayList<>();
         //ArrayList<Scanner> arrayScanner = new ArrayList<>();
-        //Scanner input = new Scanner(System.in);
+        //Scanner input = new Scanner(models.System.in);
         //Client client = new Client("HH29512","client1","client1","client1@gmail.com","client1");
         //Dossier d = new Dossier("D31111","En attente","En attente",client.getMatricule());
         //Ordonnance o1 = new Ordonnance("O111111","L3dam",d.getCode());
@@ -29,30 +29,30 @@ public class MainTest {
         //Agent a = new Agent(Globalmethod.genereteMatricule(),"agent1","agent1","agent1@gmail.com","agent11");
         //boolean res = a.addAgent();
         //if (res){
-        //    System.out.println("created successfully!");
+        //    models.System.out.println("created successfully!");
         //}else {
-        //    System.out.println("nope!");
+        //    models.System.out.println("nope!");
         //}
         //Agent.showAgents();
 
-        //System.out.println("hello word");
-        //System.out.print("Matricule : ");
+        //models.System.out.println("hello word");
+        //models.System.out.print("Matricule : ");
         //String mat = input.nextLine();
-        //System.out.print("Nom : ");
+        //models.System.out.print("Nom : ");
         //String nom = input.nextLine();
-        //System.out.print("Prenom : ");
+        //models.System.out.print("Prenom : ");
         //String prenom = input.nextLine();
-        //System.out.print("Email : ");
+        //models.System.out.print("Email : ");
         //String email = input.nextLine();
-        //System.out.print("Mot de passe : ");
+        //models.System.out.print("Mot de passe : ");
         //String mdp = input.nextLine();
 
         //Admin admin = new Admin(mat, nom, prenom, email, mdp);
         //boolean result = admin.addAdmin();
         //if (!result) {
-        //    System.out.println("Admin was successfully added!");
-        //    System.out.printf("\n\n");
-        //    System.out.println("\t\t Admins");
+        //    models.System.out.println("Admin was successfully added!");
+        //    models.System.out.printf("\n\n");
+        //    models.System.out.println("\t\t Admins");
         //    Admin.showAdmins();
         //}
         return;
