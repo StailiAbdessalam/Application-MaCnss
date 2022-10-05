@@ -4,31 +4,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-<<<<<<< HEAD
-    <list default="true" id="d7e5fa04-404b-459b-b750-1f1095794731" name="Changes" comment="merge all the bug of connection">
-      <change afterPath="$PROJECT_DIR$/src/affichage/view/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-=======
-    <list default="true" id="16db03c6-bcee-4ac1-a8df-9316454e6470" name="Changes" comment="">
->>>>>>> da5779689a8e0e811b3d03ea7956aa7b9a344eaa
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="16db03c6-bcee-4ac1-a8df-9316454e6470" name="Changes" comment="add a method login">
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/affichage/view/Client.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controllers/System/SystemController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/System/System.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/MainTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/MainTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/affichage/Presantation.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/affichage/Presantation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/affichage/global/Globalmethod.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/affichage/global/Globalmethod.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/affichage/view/Admin.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/affichage/view/Admin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/affichage/view/Agent.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/affichage/view/Agent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/affichage/view/Patient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/controllers/person/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/controllers/person/AdminController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/models/Agent.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/models/Agent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/models/person/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/models/person/Person.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainTest.java" afterDir="false" />
-<<<<<<< HEAD
-      <change beforePath="$PROJECT_DIR$/src/affichage/Presantation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/affichage/Presantation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/affichage/global/Globalmethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/affichage/global/Globalmethod.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/affichage/view/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/affichage/view/Admin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/affichage/view/Agent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/affichage/view/Agent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/affichage/view/Patient.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/person/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/person/AdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/Agent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Agent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/person/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/person/Person.java" afterDir="false" />
-=======
-      <change beforePath="$PROJECT_DIR$/src/affichage/view/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/affichage/view/Admin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/affichage/view/Agent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/affichage/view/Agent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/person/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/person/AdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/Agent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Agent.java" afterDir="false" />
->>>>>>> da5779689a8e0e811b3d03ea7956aa7b9a344eaa
+      <change beforePath="$PROJECT_DIR$/src/controllers/System/System.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,12 +39,14 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
-        <task path="$PROJECT_DIR$">
-          <activation />
-        </task>
         <projects_view>
           <tree_state>
-            <expand />
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Application-MaCnss" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
             <select />
           </tree_state>
         </projects_view>
@@ -67,6 +70,7 @@
     <setting file="file://$PROJECT_DIR$/src/affichage/view/Admin.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/affichage/view/Agent.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/affichage/view/Client.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/affichage/view/Dossiers/Dossier.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
