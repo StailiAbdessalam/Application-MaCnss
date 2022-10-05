@@ -1,12 +1,14 @@
 package affichage.view.Dossiers;
 
+import controllers.dossier.DossierController;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Dossier {
     ArrayList<String> ordonances = new ArrayList<>();
-    ArrayList<String> Medicament = new ArrayList<>();
-    ArrayList<String> Scanner = new ArrayList<>();
+    ArrayList<String> medicaments = new ArrayList<>();
+    ArrayList<String> scanners = new ArrayList<>();
 
     public int addDossier(){
       while(true){
@@ -17,15 +19,15 @@ public class Dossier {
           } else {
               System.out.println("\033[0;34m"+message+"\033[0m");
           }
-          message = "2: Add Medicament || "+this.Medicament.size();
-          if (Medicament.size() == 0) {
+          message = "2: Add Medicament || "+this.medicaments.size();
+          if (medicaments.size() == 0) {
               System.out.println(message);
           } else {
               System.out.println("\033[0;34m"+message+"\033[0m");
           }
 
-          message = "3: Add Scanner || "+this.Scanner.size() ;
-          if (Scanner.size() == 0) {
+          message = "3: Add Scanner || "+this.scanners.size() ;
+          if (scanners.size() == 0) {
               System.out.println(message);
           } else {
               System.out.println("\033[0;34m"+message+"\033[0m");
@@ -36,22 +38,31 @@ public class Dossier {
           int choiDossier = choix.nextInt();
           switch (choiDossier){
               case 1 :
-                  System.out.println("entrer votre ordonance N:"+ordonances.size());
+                  System.out.println("entrer le type d'ordonance :"+ordonances.size());
                   Scanner scanOrdonnance = new Scanner(System.in);
                   ordonances.add(scanOrdonnance.nextLine());
                   continue;
               case 2:
-                  System.out.println("entrer votre Medicament N:"+Medicament.size());
+                  System.out.println("entrer le code du Medicament :"+medicaments.size());
                   Scanner scanMedicament = new Scanner(System.in);
-                  Medicament.add(scanMedicament.nextLine());
+                  medicaments.add(scanMedicament.nextLine());
                   continue;
               case 3:
-                  System.out.println("entrer votre Scanner N:"+Scanner.size());
+                  System.out.println("entrer le code du Scanner :"+scanners.size());
                   Scanner scanScanner = new Scanner(System.in);
-                  Scanner.add(scanScanner.nextLine());
+                  scanners.add(scanScanner.nextLine());
                   continue;
               case 4:
-                  // called methodController to add dossier in a database
+                  System.out.println("Entrer le Matricule du Client");
+                  Scanner scanner = new Scanner(System.in);
+                  String matriculeClient = scanner.nextLine();
+                  DossierController dossierController = new DossierController();
+                  Boolean res = dossierController.addDossier(matriculeClient,ordonances,medicaments,scanners);
+                  if (!res){
+                      System.out.println("Dossier Created successfully");
+                  }else {
+                      System.out.println("something went wrong");
+                  }
                   return 1;
               case 5:
                   return 0;
