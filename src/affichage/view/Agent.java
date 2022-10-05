@@ -4,31 +4,19 @@ import affichage.view.Dossiers.Dossier;
 import controllers.person.AdminController;
 import controllers.person.AgentController;
 
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Objects;
 import java.util.Scanner;
 
-
-import services.Courier;
-import services.SendService;
-import models.SendEnhancedRequestBody;
-import models.SendEnhancedResponseBody;
-import models.SendRequestMessage;
-import com.google.gson.Gson;
-import java.io.IOException;
-import java.util.HashMap;
-
 public class Agent {
     public static int login() {
         HashMap loginInputs = Globalmethod.login("Email");
-
-
-
         AgentController agent = new AgentController();
         Boolean agentValidation = agent.authenticate((String) loginInputs.get("loginKey"), (String) loginInputs.get("password"));
         if(agentValidation != null && agentValidation){
             System.out.println("votre information et correct");
-            String Cle = Globalmethod.sendEmail(loginInputs.get("Email"));
+            String Cle = Globalmethod.sendEmail(String.valueOf(loginInputs.get("loginKey")));
             while (true){
                 Boolean checkCle = checkCle(Cle);
                 if(Boolean.TRUE.equals(checkCle)){
@@ -46,7 +34,6 @@ public class Agent {
         }
     }
     public static Boolean checkCle(String cleEmail){
-        System.out.println("nous somme envoyer le cle d'entrer dans votre email || entrer votre cle d'entrer || or taper exit pour sortie :");
         Scanner scanCle = new Scanner(System.in);
         String Cle = scanCle.nextLine();
         if(Objects.equals(Cle, cleEmail)){
@@ -110,36 +97,6 @@ public class Agent {
         agentInfo.put("email",email);
 
         return agentInfo;
-<<<<<<< HEAD
-    }
-
-    public static void sendEmail() {
-        Courier.init("pk_test_XPKJ13ZCZQ4CDWJ6J18XYT3FYKAF");
-
-        SendEnhancedRequestBody sendEnhancedRequestBody = new SendEnhancedRequestBody();
-        SendRequestMessage sendRequestMessage = new SendRequestMessage();
-        HashMap<String, String> to = new HashMap<String, String>();
-        to.put("email", "the.staili.abdessalam@gmail.com");
-        sendRequestMessage.setTo(to);
-
-        HashMap<String, String> content = new HashMap<String, String>();
-        content.put("title", "Simplon Clone : Nouveau Brief");
-        content.put("body", "Hello test email");
-        sendRequestMessage.setContent(content);
-
-        HashMap<String, Object> data = new HashMap<String, Object>();
-        sendRequestMessage.setData(data);
-        sendEnhancedRequestBody.setMessage(sendRequestMessage);
-
-        try {
-            SendEnhancedResponseBody response = new SendService().sendEnhancedMessage(sendEnhancedRequestBody);
-            System.out.println(response);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-=======
->>>>>>> da5779689a8e0e811b3d03ea7956aa7b9a344eaa
     }
 
 }
