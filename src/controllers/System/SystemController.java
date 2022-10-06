@@ -13,9 +13,9 @@ public class SystemController {
     Double rommbourcement = TotalPrixMedicament+TotalPrixScanner+totalPrixordonnace;
     String reponse="";
     if(rommbourcement > 1){
-        reponse="valide";
+        reponse="valid";
     }else {
-        reponse="failed";
+        reponse="not valid";
     }
         Dossier.updatedossier(reponse, String.valueOf(rommbourcement),code);
     }

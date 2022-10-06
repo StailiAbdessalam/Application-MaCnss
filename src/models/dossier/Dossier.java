@@ -89,8 +89,8 @@ public class Dossier {
 
     }
 
-    public static void  getAllPendingFoldersByStatus(String status){
-        ArrayList dossiers = new ArrayList();
+    public static ArrayList getAllFoldersByStatus(String status){
+        ArrayList<Dossier> dossiers = new ArrayList<>();
         try {
             String sql = "SELECT * FROM `dossier` WHERE status=?";
             PreparedStatement ps = connection.prepareStatement(sql);
@@ -100,9 +100,10 @@ public class Dossier {
             if(rs.next()){
                 do {
                     System.out.println(rs.getString("code"));
-                    dossiers.add(new DossierAttend(rs.getString("code"),rs.getString("status"),rs.getString("response"),rs.getString("matricule_client")));
+                    dossiers.add(new Dossier(rs.getString("code"),rs.getString("status"),rs.getString("response"),rs.getString("matricule_client")));
                 }while(rs.next());
             }
+            return dossiers;
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
@@ -110,16 +111,17 @@ public class Dossier {
     }
 
     public static void updatedossier(String response,String totalPrix,String code){
-
         try {
             String sql = "UPDATE dossier SET response=? , totalPrix=? WHERE code=?";
             PreparedStatement ps = connection.prepareStatement(sql);
             ps.setString(1,response);
             ps.setString(2,totalPrix);
             ps.setString(3,code);
-            //connection.setAutoCommit(false);
-            System.out.println(ps);
             int rs = ps.executeUpdate();
+            if (rs == 0){
+                System.out.println("Something went wrong in the system and dossier code "+ code + " isn't treated.");
+                System.exit(0);
+            }
             ps.close();
         } catch (SQLException e) {
             throw new RuntimeException(e);

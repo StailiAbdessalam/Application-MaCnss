@@ -72,7 +72,8 @@ public class Agent {
                         continue;
                     }
                 case 2:
-
+                    AgentController agentController = new AgentController();
+                    agentController.getAllPendingFolders();
                 case 3:
                     System.out.println("1: Yes\n2: Non");
                     Scanner surQuite = new Scanner(System.in);
