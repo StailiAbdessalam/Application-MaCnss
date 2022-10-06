@@ -15,4 +15,8 @@ public class EmailValidator {
         Matcher matcher = pattern.matcher(email);
         return matcher.matches();
     }
+
+    public static Boolean notValid(){
+
+    }
 }
