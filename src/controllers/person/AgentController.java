@@ -1,5 +1,6 @@
 package controllers.person;
 
+import app.security.BCrypt;
 import models.Admin;
 
 public class AgentController {
@@ -9,7 +10,7 @@ public class AgentController {
         if (result == null) {
             return null;
         } else {
-            if (result.equals(password))
+            if (BCrypt.checkpw(password,result))
                 return true;
             else
                 return false;

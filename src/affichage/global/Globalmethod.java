@@ -35,7 +35,6 @@ public class Globalmethod {
            Courier.init("pk_prod_Q02ESMDGP3MRBNMWTZ3Q1XN0A244");
             SendEnhancedRequestBody sendEnhancedRequestBody = new SendEnhancedRequestBody();
             SendRequestMessage sendRequestMessage = new SendRequestMessage();
-        System.out.println(email);
             HashMap<String, String> to = new HashMap<String, String>();
             to.put("email", email);
             sendRequestMessage.setTo(to);

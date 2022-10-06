@@ -7,7 +7,7 @@ public class Cnx {
     public static Connection CNX(){
         Connection conn = null;
         try {
-            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/macnss","root","");
+            conn = DriverManager.getConnection(Config.connectionURL,Config.user,Config.motDePasse);
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }

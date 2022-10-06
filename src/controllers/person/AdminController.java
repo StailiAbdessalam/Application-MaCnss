@@ -1,6 +1,8 @@
 package controllers.person;
 
 import affichage.view.Agent;
+import app.Config;
+import app.security.BCrypt;
 import models.Admin;
 
 import java.util.HashMap;
@@ -12,10 +14,7 @@ public class AdminController {
         if (result == null) {
             return null;
         } else {
-            if (result.equals(password))
-                return true;
-            else
-                return false;
+            return BCrypt.checkpw(password,result);
         }
     }
 
@@ -26,8 +25,8 @@ public class AdminController {
         String prenom = agentInfo.get("prenom").toString();
         String email = agentInfo.get("email").toString();
         String password = "123456";
-        models.Agent agent = new models.Agent(matricule,prenom,nom,email,password);
-        Boolean result = agent.addAgent();
-        return result;
+        String hashedPassword = BCrypt.hashpw(password, Config.salt);
+        models.Agent agent = new models.Agent(matricule,prenom,nom,email,hashedPassword);
+        return agent.addAgent();
     }
 }
