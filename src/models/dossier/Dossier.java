@@ -89,21 +89,20 @@ public class Dossier {
 
     }
 
-    public static void  getAllDossierAttend(String Status){
-        ArrayList alldossier = new ArrayList();
+    public static void  getAllPendingFoldersByStatus(String status){
+        ArrayList dossiers = new ArrayList();
         try {
             String sql = "SELECT * FROM `dossier` WHERE status=?";
             PreparedStatement ps = connection.prepareStatement(sql);
             connection.setAutoCommit(false);
-            ps.setString(1,Status);
+            ps.setString(1,status);
             ResultSet rs = ps.executeQuery();
             if(rs.next()){
                 do {
                     System.out.println(rs.getString("code"));
-                    alldossier.add(new DossierAttend(rs.getString("code"),rs.getString("status"),rs.getString("response"),rs.getString("matricule_client")));
+                    dossiers.add(new DossierAttend(rs.getString("code"),rs.getString("status"),rs.getString("response"),rs.getString("matricule_client")));
                 }while(rs.next());
             }
-            System.out.println(alldossier);
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
