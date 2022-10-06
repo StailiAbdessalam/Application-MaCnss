@@ -89,9 +89,7 @@ public class Agent {
                     continue;
             }
         }
-
     }
-
     public static HashMap  addAgent()  {
         HashMap<String,String> agentInfo = new HashMap<>();
         Scanner scanner = new Scanner(System.in);
