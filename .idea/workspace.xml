@@ -4,19 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
+    <list default="true" id="a3a31094-59de-424b-9431-f810220ff4bb" name="Changes" comment="merge by abdessalam" />
+=======
     <list default="true" id="16db03c6-bcee-4ac1-a8df-9316454e6470" name="Changes" comment="add a method login">
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/checksums/checksums.lock" afterDir="false" />
+<<<<<<< HEAD
+=======
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/checksums/md5-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/checksums/sha1-checksums.bin" afterDir="false" />
+>>>>>>> c82b3b5cf97439dc8ac06500e1e31ee54b37700f
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/affichage/view/Agent.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/affichage/view/Agent.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/validation/EmailValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/validation/EmailValidator.java" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+>>>>>>> c82b3b5cf97439dc8ac06500e1e31ee54b37700f
     </list>
+>>>>>>> abdessalam
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,12 +44,7 @@
       <state>
         <projects_view>
           <tree_state>
-            <expand>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="Application-MaCnss" type="f1a62948:ProjectNode" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </tree_state>
         </projects_view>
@@ -90,7 +97,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="16db03c6-bcee-4ac1-a8df-9316454e6470" name="Changes" comment="add a method login" />
+      <changelist id="95cc0e6c-4ad9-498c-8c93-f43543a841a5" name="Changes" comment="" />
       <created>1664526119381</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -174,7 +181,119 @@
       <option name="project" value="LOCAL" />
       <updated>1664665890851</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="add method sendEmail in Agent">
+      <created>1665045393590</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1665045393591</updated>
+    </task>
+    <task id="LOCAL-00013" summary="add class System to check all Details Dossier is valid">
+      <created>1665045632275</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1665045632275</updated>
+    </task>
+    <task id="LOCAL-00014" summary="add validate case to add dossier">
+      <created>1665045728395</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1665045728395</updated>
+    </task>
+    <task id="LOCAL-00015" summary="method check Dossier in the Controller System">
+      <created>1665045764493</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1665045764493</updated>
+    </task>
+    <task id="LOCAL-00016" summary="workspace file">
+      <created>1665045784035</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1665045784035</updated>
+    </task>
+    <task id="LOCAL-00017" summary="modificate in a main cladd to test">
+      <created>1665045820369</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1665045820369</updated>
+    </task>
+    <task id="LOCAL-00018" summary="make class DossierAttend">
+      <created>1665045913315</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1665045913315</updated>
+    </task>
+    <task id="LOCAL-00019" summary="class dossier controller">
+      <created>1665045932750</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1665045932750</updated>
+    </task>
+    <task id="LOCAL-00020" summary="all change last day">
+      <created>1665045969790</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1665045969790</updated>
+    </task>
+    <task id="LOCAL-00021" summary=".">
+      <created>1665046084613</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1665046084613</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Class DossierAttend to initial type ogject of data">
+      <created>1665046173352</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1665046173352</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Class DossierController to add dosier of client">
+      <created>1665046257484</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1665046257484</updated>
+    </task>
+    <task id="LOCAL-00024" summary="SystemController class add method checkDossier">
+      <created>1665046368154</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1665046368154</updated>
+    </task>
+    <task id="LOCAL-00025" summary="add method getPrixRembourcementTotalByTable return double to select sum the totalPrix">
+      <created>1665046501983</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1665046501983</updated>
+    </task>
+    <task id="LOCAL-00026" summary="merge by abdessalam">
+      <created>1665048224536</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1665048224536</updated>
+    </task>
+    <task id="LOCAL-00027" summary="merge by abdessalam">
+      <created>1665048230539</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1665048230539</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -192,19 +311,32 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="link folder in repau github" />
-    <MESSAGE value="create a method menu Global to choixi role the user" />
-    <MESSAGE value="class admin and method login and menu admin to choix propriete admin" />
-    <MESSAGE value="initail class agent" />
     <MESSAGE value="Globalmethod is a class to add method global in all the class in view" />
     <MESSAGE value="inial all the view in main global the prokect" />
     <MESSAGE value="inial all the view in main global the project" />
     <MESSAGE value="class abstract in all model" />
     <MESSAGE value="clas Presantation to affiche menu de view" />
-    <MESSAGE value="." />
     <MESSAGE value="add method addAgent to add agent in data base" />
     <MESSAGE value="add a method login" />
-    <option name="LAST_COMMIT_MESSAGE" value="add a method login" />
+    <MESSAGE value="add method sendEmail in Agent" />
+    <MESSAGE value="commit all the method the tritement and workspace.xml" />
+    <MESSAGE value="commit all the method the tritement and workspace" />
+    <MESSAGE value="add class System to check all Details Dossier is valid" />
+    <MESSAGE value="add validate case to add dossier" />
+    <MESSAGE value="method check Dossier in the Controller System" />
+    <MESSAGE value="workspace file" />
+    <MESSAGE value="modificate in a main cladd to test" />
+    <MESSAGE value="make class DossierAttend" />
+    <MESSAGE value="class dossier controller" />
+    <MESSAGE value="all change last day" />
+    <MESSAGE value="commit all file the dependencies" />
+    <MESSAGE value="." />
+    <MESSAGE value="Class DossierAttend to initial type ogject of data" />
+    <MESSAGE value="Class DossierController to add dosier of client" />
+    <MESSAGE value="SystemController class add method checkDossier" />
+    <MESSAGE value="add method getPrixRembourcementTotalByTable return double to select sum the totalPrix" />
+    <MESSAGE value="merge by abdessalam" />
+    <option name="LAST_COMMIT_MESSAGE" value="merge by abdessalam" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

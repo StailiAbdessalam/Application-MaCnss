@@ -17,6 +17,6 @@ public class EmailValidator {
     }
 
     public static Boolean notValid(){
-
+        return null;
     }
 }

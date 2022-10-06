@@ -9,7 +9,6 @@ public class Dossier {
     ArrayList<String> ordonances = new ArrayList<>();
     ArrayList<String> medicaments = new ArrayList<>();
     ArrayList<String> scanners = new ArrayList<>();
-
     public int addDossier(){
       while(true){
           System.out.println("taper valide pour valider les donners de client .");
