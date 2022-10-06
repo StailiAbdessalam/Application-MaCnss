@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="16db03c6-bcee-4ac1-a8df-9316454e6470" name="Changes" comment="add method getPrixRembourcementTotalByTable return double to select sum the totalPrix" />
+    <list default="true" id="a3a31094-59de-424b-9431-f810220ff4bb" name="Changes" comment="merge by abdessalam" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -255,7 +255,21 @@
       <option name="project" value="LOCAL" />
       <updated>1665046501983</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="merge by abdessalam">
+      <created>1665048224536</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1665048224536</updated>
+    </task>
+    <task id="LOCAL-00027" summary="merge by abdessalam">
+      <created>1665048230539</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1665048230539</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -273,7 +287,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="initail class agent" />
     <MESSAGE value="Globalmethod is a class to add method global in all the class in view" />
     <MESSAGE value="inial all the view in main global the prokect" />
     <MESSAGE value="inial all the view in main global the project" />
@@ -298,7 +311,8 @@
     <MESSAGE value="Class DossierController to add dosier of client" />
     <MESSAGE value="SystemController class add method checkDossier" />
     <MESSAGE value="add method getPrixRembourcementTotalByTable return double to select sum the totalPrix" />
-    <option name="LAST_COMMIT_MESSAGE" value="add method getPrixRembourcementTotalByTable return double to select sum the totalPrix" />
+    <MESSAGE value="merge by abdessalam" />
+    <option name="LAST_COMMIT_MESSAGE" value="merge by abdessalam" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
