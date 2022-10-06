@@ -1,6 +1,7 @@
 package affichage.view;
 import affichage.global.Globalmethod;
 import affichage.view.Dossiers.Dossier;
+import app.validation.EmailValidator;
 import controllers.person.AdminController;
 import controllers.person.AgentController;
 
@@ -102,11 +103,41 @@ public class Agent {
         agentInfo.put("prenom",prenom);
         System.out.println("Entrer le Email");
         String email = scanner.nextLine();
-        agentInfo.put("email",email);
+
+        do {
+            email = scanner.nextLine();
+            agentInfo.put("email",email);
+            if (!EmailValidator.isValid(email)){
+                System.out.println("tape a valide email");
+            }
+        }while (!EmailValidator.isValid(email));
 
         return agentInfo;
 
     }
 
+    public static void sendEmail() {
+        Courier.init("pk_test_XPKJ13ZCZQ4CDWJ6J18XYT3FYKAF");
+        SendEnhancedRequestBody sendEnhancedRequestBody = new SendEnhancedRequestBody();
+        SendRequestMessage sendRequestMessage = new SendRequestMessage();
+        HashMap<String, String> to = new HashMap<String, String>();
+        to.put("email", "the.staili.abdessalam@gmail.com");
+        sendRequestMessage.setTo(to);
+
+        HashMap<String, String> content = new HashMap<String, String>();
+        content.put("title", "Simplon Clone : Nouveau Brief");
+        content.put("body", "Hello test email");
+        sendRequestMessage.setContent(content);
+
+        HashMap<String, Object> data = new HashMap<String, Object>();
+        sendRequestMessage.setData(data);
+        sendEnhancedRequestBody.setMessage(sendRequestMessage);
+
+        try {
+            SendEnhancedResponseBody response = new SendService().sendEnhancedMessage(sendEnhancedRequestBody);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 
 }

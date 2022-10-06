@@ -1,6 +1,7 @@
 package controllers.dossier;
 
 import affichage.global.Globalmethod;
+import controllers.System.SystemController;
 import models.dossier.Composants.Medicament;
 import models.dossier.Composants.Ordonnance;
 import models.dossier.Composants.Scanner;
@@ -13,7 +14,8 @@ public class DossierController {
         ArrayList<Ordonnance> ords = new ArrayList<>();
         ArrayList<Medicament> medis = new ArrayList<>();
         ArrayList<Scanner> scans = new ArrayList<>();
-        models.dossier.Dossier dossier = new models.dossier.Dossier(Globalmethod.genereteMatricule(),"En attente","En attente",matriculeClient);
+        String code = Globalmethod.genereteMatricule();
+        models.dossier.Dossier dossier = new models.dossier.Dossier(code,"En attente","En attente",matriculeClient);
         for (String ord : ordonnances) {
             Ordonnance ordonnance = new Ordonnance(Globalmethod.genereteMatricule(),ord,dossier.getCode());
             ords.add(ordonnance);
@@ -27,6 +29,10 @@ public class DossierController {
             scans.add(scanner);
         }
         Boolean DossierAdded = dossier.createDossier(ords,medis,scans);
+        if(!DossierAdded){
+            SystemController systemController = new SystemController();
+            systemController.checkDossier(code);
+        }
         return DossierAdded;
     }
 }
