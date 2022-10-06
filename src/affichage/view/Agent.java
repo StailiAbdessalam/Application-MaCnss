@@ -72,8 +72,6 @@ public class Agent {
                     }
                 case 2:
 
-
-
                 case 3:
                     System.out.println("1: Yes\n2: Non");
                     Scanner surQuite = new Scanner(System.in);
