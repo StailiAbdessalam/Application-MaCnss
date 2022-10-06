@@ -4,6 +4,7 @@ import models.System.Systeme;
 import models.dossier.Dossier;
 
 public class SystemController {
+
     public void checkDossier(String code){
 
     Double  TotalPrixMedicament =  Systeme.getPrixRembourcementTotalByTable(code,"medicaments_cnss","medicament");

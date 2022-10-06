@@ -72,6 +72,8 @@ public class Agent {
                     }
                 case 2:
 
+
+
                 case 3:
                     System.out.println("1: Yes\n2: Non");
                     Scanner surQuite = new Scanner(System.in);
@@ -112,7 +114,6 @@ public class Agent {
 
     public static void sendEmail() {
         Courier.init("pk_test_XPKJ13ZCZQ4CDWJ6J18XYT3FYKAF");
-
         SendEnhancedRequestBody sendEnhancedRequestBody = new SendEnhancedRequestBody();
         SendRequestMessage sendRequestMessage = new SendRequestMessage();
         HashMap<String, String> to = new HashMap<String, String>();
@@ -130,7 +131,6 @@ public class Agent {
 
         try {
             SendEnhancedResponseBody response = new SendService().sendEnhancedMessage(sendEnhancedRequestBody);
-            System.out.println(response);
         } catch (IOException e) {
             e.printStackTrace();
         }
