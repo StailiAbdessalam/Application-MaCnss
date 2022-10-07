@@ -6,7 +6,6 @@ import affichage.view.Client;
 import java.util.Scanner;
 
 public class Presantation {
-
     public void Presantation(){
       System.out.println("bonjour dans MCNSS :");
       while (true){
@@ -42,7 +41,6 @@ public class Presantation {
                           continue;
                       }
                   }
-
               case 4 :
                   System.exit(0);
               default:

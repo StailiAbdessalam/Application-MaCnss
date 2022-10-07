@@ -12,6 +12,7 @@ public class Systeme {
                         " WHERE code=(SELECT code "+
                         "FROM "+TableDonner+" WHERE code_dossier=?)";
             PreparedStatement ps = connection.prepareStatement(sql);
+            System.out.println(sql);
             connection.setAutoCommit(false);
             ps.setString(1,CodeDossier);
             ResultSet rs = ps.executeQuery();
