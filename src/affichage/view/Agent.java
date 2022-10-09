@@ -2,6 +2,7 @@ package affichage.view;
 import affichage.global.Globalmethod;
 import affichage.view.Dossiers.Dossier;
 import app.validation.EmailValidator;
+import controllers.dossier.DossierController;
 import controllers.person.AdminController;
 import controllers.person.AgentController;
 
@@ -57,7 +58,7 @@ public class Agent {
     }
     public static int MenuAgent(){
         while (true){
-            System.out.println("choisi votre choix :");
+            System.out.println("choisi votre option :");
             System.out.println("1: add Dossier.\n2: Géres les Dossiers\n3: log out");
             Scanner scanChoix = new Scanner(System.in);
             int choix = scanChoix.nextInt();
@@ -68,12 +69,35 @@ public class Agent {
                     if(dossieradded==0){
                         continue;
                     }else {
-                        System.out.println("file added");
+                        System.out.println("ed");
                         continue;
                     }
                 case 2:
                     AgentController agentController = new AgentController();
-                    agentController.getAllPendingFolders();
+                    while (true){
+                        int gestionchoix = gestion();
+                        switch (gestionchoix){
+                            case 1:
+                                System.out.println("choisi un Dossier");
+                                agentController.getAllPendingFolders();
+                                Scanner scan = new Scanner(System.in);
+                                String code = scan.nextLine();
+                                String status = updatstatus();
+                                DossierController.updateState(status,code);
+                                String message = "your Dossier N:"+code+" est :"+status;
+                                String email = models.dossier.Dossier.getEmailByMatricule(code);
+                                sendEmail(email,message);
+                                continue;
+                            case 2:
+                                agentController.getAllPendingFolders();
+                                System.out.println("-----------------------------------------------------------------------------------------");
+                                continue;
+                            case 3:
+                                break;
+                        }
+                        break;
+                    }
+                    continue;
                 case 3:
                     System.out.println("1: Yes\n2: Non");
                     Scanner surQuite = new Scanner(System.in);
@@ -119,17 +143,17 @@ public class Agent {
 
     }
 
-    public static void sendEmail() {
+    public static void sendEmail(String email,String body) {
         Courier.init("pk_test_XPKJ13ZCZQ4CDWJ6J18XYT3FYKAF");
         SendEnhancedRequestBody sendEnhancedRequestBody = new SendEnhancedRequestBody();
         SendRequestMessage sendRequestMessage = new SendRequestMessage();
         HashMap<String, String> to = new HashMap<String, String>();
-        to.put("email", "the.staili.abdessalam@gmail.com");
+        to.put("email",email);
         sendRequestMessage.setTo(to);
 
         HashMap<String, String> content = new HashMap<String, String>();
-        content.put("title", "Simplon Clone : Nouveau Brief");
-        content.put("body", "Hello test email");
+        content.put("title", "MCNSS : Reponse Dossier");
+        content.put("body", body);
         sendRequestMessage.setContent(content);
 
         HashMap<String, Object> data = new HashMap<String, Object>();
@@ -143,4 +167,35 @@ public class Agent {
         }
     }
 
+    public static int gestion(){
+      while (true){
+          System.out.println("choisi votre option :");
+          System.out.println("1- send reponse \n2- check all dosiier\n3- quiter");
+          Scanner scan = new Scanner(System.in);
+          int choix = scan.nextInt();
+          if(choix>3 || choix <1){
+              System.out.println("\033[0;31mchoix invalid\033[0m");
+              continue;
+          }else{
+              return choix;
+          }
+      }
+    }
+
+    public static String updatstatus(){
+       while (true){
+           System.out.println("1- validate reumbourcement\n2- rejucted reumbourcement");
+           Scanner scan = new Scanner(System.in);
+           int choixstatus = scan.nextInt();
+           switch (choixstatus){
+               case 1:
+                   return "Valide";
+               case 2:
+                   return "Failed";
+               default:
+                   System.out.println("\033[0;31mchoix invalid\033[0m");
+                   continue;
+           }
+       }
+    }
 }

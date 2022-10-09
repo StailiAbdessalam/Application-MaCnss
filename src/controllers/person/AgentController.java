@@ -21,15 +21,15 @@ public class AgentController {
     public void getAllPendingFolders(){
         ArrayList<Dossier> folders;
         folders = Dossier.getAllFoldersByStatus("En attente");
-        for (int i = 0; i < folders.size(); i+=3) {
+        for (int i = 0; i < folders.size(); i++) {
             Dossier d = folders.get(i);
             Dossier d1 = folders.get(i);
             Dossier d2 = folders.get(i);
-            System.out.println((i+1) + "- Dossier code : "+ d.getCode() + " | response : "+ d.getResponse() +"\t" +
-                    (i+2) + "- Dossier code : "+ d1.getCode() + " | response : "+ d1.getResponse() +"\t"+
-            (i+3) + "- Dossier code : "+ d2.getCode() + " | response : "+ d2.getResponse() +"\t");
+            System.out.println((i+1) + "- Dossier code : "+ d.getCode() + " | response : "+ d.getResponse());
         }
     }
+
+
 
 
 

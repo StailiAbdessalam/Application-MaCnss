@@ -5,6 +5,7 @@ import controllers.System.SystemController;
 import models.dossier.Composants.Medicament;
 import models.dossier.Composants.Ordonnance;
 import models.dossier.Composants.Scanner;
+import models.dossier.Dossier;
 
 import java.util.ArrayList;
 
@@ -34,5 +35,10 @@ public class DossierController {
             systemController.checkDossier(code);
         }
         return DossierAdded;
+    }
+
+    public static void updateState(String status , String codedossier){
+        Dossier.updateState(status,codedossier);
+
     }
 }

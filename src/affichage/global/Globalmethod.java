@@ -48,7 +48,6 @@ public class Globalmethod {
             HashMap<String, Object> data = new HashMap<String, Object>();
             sendRequestMessage.setData(data);
             sendEnhancedRequestBody.setMessage(sendRequestMessage);
-
             try {
                 SendEnhancedResponseBody response = new SendService().sendEnhancedMessage(sendEnhancedRequestBody);
                 System.out.println("nous somme envoyer le cle d'entrer dans votre email || entrer votre cle d'entrer || or taper exit pour sortie :");

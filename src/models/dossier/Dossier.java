@@ -99,7 +99,6 @@ public class Dossier {
             ResultSet rs = ps.executeQuery();
             if(rs.next()){
                 do {
-                    System.out.println(rs.getString("code"));
                     dossiers.add(new Dossier(rs.getString("code"),rs.getString("status"),rs.getString("response"),rs.getString("matricule_client")));
                 }while(rs.next());
             }
@@ -127,5 +126,40 @@ public class Dossier {
             throw new RuntimeException(e);
         }
 
+    }
+
+    public static void updateState(String status,String matriculeDossier){
+        try {
+            String sql = "UPDATE dossier SET status=? WHERE code=?";
+            PreparedStatement ps = connection.prepareStatement(sql);
+            ps.setString(1,status);
+            ps.setString(2,matriculeDossier);
+            System.out.println(ps);
+            int rs = ps.executeUpdate();
+            if (rs == 0){
+                System.out.println("Something went wrong in the system and dossier code "+ matriculeDossier + " isn't treated.");
+                System.exit(0);
+            }
+            ps.close();
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+    public static String getEmailByMatricule(String matriculeDossier){
+        try {
+            String sql = "SELECT DISTINCT c.email " +
+                    "FROM `client` c, dossier d " +
+                    "WHERE c.matricule=d.matricule_client " +
+                    "AND d.code=?";
+            PreparedStatement ps = connection.prepareStatement(sql);
+            ps.setString(1,matriculeDossier);
+            ResultSet rs = ps.executeQuery();
+            if(rs.next()){
+                return rs.getString(1);
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+        return null;
     }
 }

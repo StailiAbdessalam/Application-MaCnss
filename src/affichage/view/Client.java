@@ -28,7 +28,7 @@ public class Client {
             int choix = scanChoix.nextInt();
             switch (choix){
                 case 1:
-                    //Client.showDossier();
+                    models.Client.showFoldersByClient("HH29512");
                     continue;
                 case 2:
                     System.out.println("1: Yes\n2: Non");

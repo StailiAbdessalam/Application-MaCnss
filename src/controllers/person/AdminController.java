@@ -11,9 +11,9 @@ import services.Courier;
 import services.SendService;
 
 import java.io.IOException;
+import java.nio.charset.Charset;
 import java.util.HashMap;
-import java.util.UUID;
-
+import java.util.Random;
 public class AdminController {
     public Boolean authenticate(String email, String password) {
         Admin admin = new Admin();
@@ -48,20 +48,50 @@ public class AdminController {
 
         HashMap<String, String> content = new HashMap<String, String>();
         content.put("title", "Password  :");
-        int idOne = Math.abs(UUID.randomUUID().hashCode());
+        String idOne = getAlphaNumericString(8);
         content.put("body", "your password to access a Mcnss :"+ idOne);
         sendRequestMessage.setContent(content);
-
         HashMap<String, Object> data = new HashMap<String, Object>();
         sendRequestMessage.setData(data);
         sendEnhancedRequestBody.setMessage(sendRequestMessage);
-
         try {
             SendEnhancedResponseBody response = new SendService().sendEnhancedMessage(sendEnhancedRequestBody);
             System.out.println("nous sommes envoyer password de patient dans leur email :");
         } catch (IOException e) {
             e.printStackTrace();
         }
-        return String.valueOf(idOne);
+        return idOne;
     }
+
+    static String getAlphaNumericString(int n)
+    {
+        // length is bounded by 256 Character
+        byte[] array = new byte[256];
+        new Random().nextBytes(array);
+
+        String randomString
+                = new String(array, Charset.forName("UTF-8"));
+        // Create a StringBuffer to store the result
+        StringBuffer r = new StringBuffer();
+
+        // Append first 20 alphanumeric characters
+        // from the generated random String into the result
+        for (int k = 0; k < randomString.length(); k++) {
+
+            char ch = randomString.charAt(k);
+
+            if (((ch >= 'a' && ch <= 'z')
+                    || (ch >= 'A' && ch <= 'Z')
+                    || (ch >= '0' && ch <= '9'))
+                    && (n > 0)) {
+
+                r.append(ch);
+                n--;
+            }
+        }
+        // return the resultant string
+        return r.toString();
+    }
+
+
 }
